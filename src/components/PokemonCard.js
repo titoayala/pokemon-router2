@@ -5,17 +5,19 @@ export default function PokemonCard({ pokemon }) {
             <div className="pokeCard" >
                 <img src={pokemon.src} alt="Imagen Pokemon" />
 
-                <div className="nombrepokemon">Nombre:{pokemon.name}</div>
-                <ul>
-                    <div>
-                        {pokemon.stats?.map((stat, i) => (
-                            <li key={i}>
-                                {stat.name}:{stat.base}
-                            </li>
-                        ))}
-                    </div>
-                </ul>
-                <div>Tipo: {pokemon.types}</div>
+                <div className="detallesCard">
+                    <div className="nombrepokemon">Nombre: {pokemon.name}</div>
+                    <ul>
+                        <div>
+                            {pokemon.stats?.map((stat, i) => (
+                                <li key={i}>
+                                    {stat.name}:{stat.base}
+                                </li>
+                            ))}
+                        </div>
+                    </ul>
+                    <div className="tipoPokemon">Tipo: {pokemon.types}</div>
+                </div>
             </div>
         </>
     );

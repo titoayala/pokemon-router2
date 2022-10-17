@@ -17,7 +17,7 @@ const PokeNavbar = () => {
         {" - "}
         <NavLink
           className={({ isActive }) => (isActive ? "active" : undefined)} to="/Pokemon">
-          Pokemon
+          Pokemones
         </NavLink>
       </div>
     </Navbar>

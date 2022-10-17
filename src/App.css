@@ -26,20 +26,31 @@
 
 .pokeCard {
   display: flex;
-  flex-direction: column;
-  max-width: 430px;
+  justify-content: space-between;
+  width: 500px;
   background-color: rgb(185, 189, 207);
   margin: 2% auto;
   padding: 2%;
 }
 
 .pokeCard img {
-  width: 100%;
+  width: 50%;
 }
 
 .nombrepokemon {
   font-size: 25px;
   font-weight: bold;
+}
+
+.detallesCard{
+  display: flex;
+  flex-direction: column;
+}
+
+.tipoPokemon{
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .selection {
